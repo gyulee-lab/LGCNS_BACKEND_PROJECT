@@ -1,0 +1,28 @@
+{{>layouts/header}}
+
+<table class="table">
+    <colgroup>
+        <col style="width:15%">
+        <col style="width:50%">
+    </colgroup>
+    <thead>
+    <tr>
+        <th scope="col" style="display:none;">ID</th>
+        <th scope="col">NAME</th>
+        <th scope="col">지원 이유</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#acceptList}}
+        <tr>
+            <td style="display:none;">{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{content}}</td>
+            <td><a href="/travels/{{id}}/edit" class="btn btn-warning">수정</a></td>
+            <td><a href="/travels/{{id}}/delete" class="btn btn-danger">삭제</a></td>
+        </tr>
+    {{/acceptList}}
+    </tbody>
+</table>
+
+{{>layouts/footer}}

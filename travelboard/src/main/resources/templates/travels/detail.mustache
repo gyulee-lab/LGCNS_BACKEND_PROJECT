@@ -1,0 +1,17 @@
+{{>layouts/header}}
+
+<div class="card" style="width: 50rem;">
+    {{#travel}}
+        <div class="card-body">
+            <h5 class="card-title" hidden="true">{{id}}</h5>
+            <h3 class="card-title">{{title}}</h3>
+            <h5 class="card-text">가이드 : {{guide}}</h5>
+            <p class="card-text">{{content}}</p>
+            <a href="/travels" class="btn btn-primary">목록</a>
+            <a href="/travels/accept" class="btn btn-warning">지원하기</a>
+        </div>
+    {{/travel}}
+</div>
+
+
+{{>layouts/footer}}

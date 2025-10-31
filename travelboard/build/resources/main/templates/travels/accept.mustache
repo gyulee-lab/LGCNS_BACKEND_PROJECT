@@ -1,0 +1,21 @@
+
+{{>layouts/header}}
+
+<form class="container" action="/travels/create" method="post">
+    <br>
+    <div class="mb-3">
+        <label class="form-label">이름</label>
+        <input type="text" class="form-control" name="name">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">지원 이유</label>
+        <textarea class="form-control" name="content"></textarea>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">제출</button>
+    <a href="/travels">목록</a>
+</form>
+
+{{>layouts/footer}}
